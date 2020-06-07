@@ -1,0 +1,12 @@
+Дан одномерный массив числовых значений, насчитывающий N элементов.Исключить из него M элементов, начиная с позиции K.
+
+import random
+N = random.randint(1,10)
+arr = [random.randint(-100,100) for i in range(N)]
+print(arr)
+K = random.randint(1,10)
+print("K=" + str(K))
+M = random.randint(1,10)
+print("M=" + str(M))
+arr[K : K + M]=[]
+print(arr)
